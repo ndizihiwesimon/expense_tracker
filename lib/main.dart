@@ -1,9 +1,11 @@
-
 import 'package:flutter/material.dart';
 
-void main(){
-  runApp(MaterialApp(
-    home: //Todo: add main widget here...
-  ),
+import 'package:expense_tracker/expenses.dart';
+
+void main() {
+  runApp(
+    const MaterialApp(
+      home: Expenses(),
+    ),
   );
-  }
+}
