@@ -152,7 +152,9 @@ class _NewExpenseState extends State<NewExpense> {
                   }),
               const Spacer(),
               TextButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.pop(context);
+                },
                 child: const Text("Cancel"),
               ),
               ElevatedButton(
