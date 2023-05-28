@@ -40,6 +40,9 @@ void main() {
               color: kDarkColorScheme.onSecondaryContainer,
               fontWeight: FontWeight.normal,
               fontSize: 14,
+            ),
+            bodyLarge: TextStyle(
+              color: kDarkColorScheme.onSecondaryContainer,
             )),
       ),
       theme: ThemeData().copyWith(
