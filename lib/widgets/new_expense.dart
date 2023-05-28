@@ -138,6 +138,7 @@ class _NewExpenseState extends State<NewExpense> {
                           value: category,
                           child: Text(
                             category.name.toUpperCase(),
+                            style: Theme.of(context).textTheme.bodyMedium,
                           ),
                         ),
                       )
