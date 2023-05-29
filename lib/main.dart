@@ -15,36 +15,44 @@ void main() {
   runApp(
     MaterialApp(
       darkTheme: ThemeData.dark().copyWith(
-        useMaterial3: true,
-        colorScheme: kDarkColorScheme,
-        cardTheme: const CardTheme().copyWith(
-          color: kDarkColorScheme.secondaryContainer,
-          margin: const EdgeInsets.symmetric(
-            horizontal: 12,
-            vertical: 4,
-          ),
-        ),
-        elevatedButtonTheme: ElevatedButtonThemeData(
-          style: ElevatedButton.styleFrom(
-            backgroundColor: kDarkColorScheme.primaryContainer,
-            foregroundColor: kDarkColorScheme.onPrimaryContainer,
-          ),
-        ),
-        textTheme: ThemeData().textTheme.copyWith(
-            titleLarge: TextStyle(
-              fontWeight: FontWeight.bold,
-              color: kDarkColorScheme.onSecondaryContainer,
-              fontSize: 16,
+          useMaterial3: true,
+          colorScheme: kDarkColorScheme,
+          cardTheme: const CardTheme().copyWith(
+            color: kDarkColorScheme.secondaryContainer,
+            margin: const EdgeInsets.symmetric(
+              horizontal: 12,
+              vertical: 4,
             ),
-            bodyMedium: TextStyle(
-              color: kDarkColorScheme.onSecondaryContainer,
-              fontWeight: FontWeight.normal,
-              fontSize: 14,
+          ),
+          elevatedButtonTheme: ElevatedButtonThemeData(
+            style: ElevatedButton.styleFrom(
+              backgroundColor: kDarkColorScheme.primaryContainer,
+              foregroundColor: kDarkColorScheme.onPrimaryContainer,
             ),
-            bodyLarge: TextStyle(
-              color: kDarkColorScheme.onSecondaryContainer,
-            )),
-      ),
+          ),
+          textTheme: ThemeData().textTheme.copyWith(
+                headlineLarge: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  color: kDarkColorScheme.onSecondaryContainer,
+                  fontSize: 16,
+                ),
+                titleLarge: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  color: kDarkColorScheme.onSecondaryContainer,
+                  fontSize: 16,
+                ),
+                bodyMedium: TextStyle(
+                  color: kDarkColorScheme.onSecondaryContainer,
+                  fontWeight: FontWeight.normal,
+                  fontSize: 14,
+                ),
+                bodyLarge: TextStyle(
+                  color: kDarkColorScheme.onSecondaryContainer,
+                ),
+              ),
+          snackBarTheme: const SnackBarThemeData().copyWith(
+            backgroundColor: kDarkColorScheme.secondary,
+          )),
       theme: ThemeData().copyWith(
         useMaterial3: true,
         colorScheme: kColorScheme,
